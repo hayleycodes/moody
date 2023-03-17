@@ -1,0 +1,45 @@
+.cell {
+  text-align: center;
+  background-color: white;
+  height: 50px;
+  width: 9%;
+  margin: 5px;
+}
+
+.average-mood {
+  border: 3px solid black;
+  transition: 0.3s;
+  transform: scale(1.2);
+  background-color: white !important;
+  box-shadow: 1px 1px 5px #909497;
+}
+
+.selected {
+  border: 4px dotted #000;
+}
+
+button {
+  border: none;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 3px;
+
+  color: #000;
+  // background-image: -webkit-linear-gradient(
+  //   30deg,
+  //   #c266d3 50%,
+  //   transparent 50%
+  // );
+  // background-image: linear-gradient(30deg, #c266d3 50%, transparent 50%);
+  // background-size: 500px;
+  // background-repeat: no-repeat;
+  // background-position: 0%;
+  // -webkit-transition: background 300ms ease-in-out;
+  // transition: background 300ms ease-in-out;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px #909497;
+  transition: 0.3s;
+}
