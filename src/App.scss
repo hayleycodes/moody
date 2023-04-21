@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
 html {
   height: 100%;
 }
@@ -13,6 +15,7 @@ body {
 }
 
 h1 {
+  font-family: "Neucha", cursive;
   width: fit-content;
   background-image: linear-gradient(to right, violet, blue, green, yellow, red);
   -webkit-background-clip: text;
