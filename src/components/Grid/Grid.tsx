@@ -8,7 +8,7 @@ type GridProps = {
 };
 
 const Grid = ({ selectMood, averageMood }: GridProps) => {
-  const cell = (
+  const buildCell = (
     moodText: string,
     moodColour: string,
     selectMood: (text: string, x: number, y: number) => void,
@@ -29,7 +29,7 @@ const Grid = ({ selectMood, averageMood }: GridProps) => {
         selectMood={selectMood}
         rowNumber={rowNumber}
         columnNumber={index}
-        key={index}
+        key={`${rowNumber} ${index} ${moodText}`}
         cellClass={cellClass}
       />
     );
@@ -39,7 +39,7 @@ const Grid = ({ selectMood, averageMood }: GridProps) => {
     return (
       <div className="row" key={rowNumber}>
         {row.map((mood_data: any, index: number) =>
-          cell(mood_data[0], mood_data[1], selectMood, rowNumber, index)
+          buildCell(mood_data[0], mood_data[1], selectMood, rowNumber, index)
         )}
       </div>
     );

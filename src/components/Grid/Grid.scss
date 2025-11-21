@@ -1,5 +1,8 @@
-.row {
+.grid {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
 }
